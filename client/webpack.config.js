@@ -1,5 +1,5 @@
 const { join } = require('node:path')
-// const Dotenv = require('dotenv-webpack')
+
 module.exports = {
   mode: 'development',
   entry: join(__dirname, 'index.tsx'),
@@ -14,6 +14,11 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        include: join(__dirname, '../server/public'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
     ],
   },
   resolve: {
@@ -23,13 +28,5 @@ module.exports = {
   devServer: {
     contentBase: join(__dirname, '../server/public'),
   },
-
-  // plugins: [
-  //   // !!! NEW for .env file
-  //   new Dotenv({
-  //     path: join(__dirname, '../.env'),
-  //   }),
-  // ]
-
 
 }
