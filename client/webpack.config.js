@@ -1,4 +1,5 @@
 const { join } = require('node:path')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -28,5 +29,11 @@ module.exports = {
   devServer: {
     contentBase: join(__dirname, '../server/public'),
   },
+
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //       template:join(__dirname, '../server/public', 'index.html'),
+  //   }),
+//]
 
 }
