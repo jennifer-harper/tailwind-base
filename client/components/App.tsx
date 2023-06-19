@@ -1,15 +1,17 @@
-import './app.css'
 import Nav from './Nav'
-
+import Carousel from './Carousel'
 
 function App() {
 
   return (
     <>
     <Nav />
-    <div className='text-3xl text-green-600 p-2'>
+    
+    <div className='text-5xl text-green-600 p-2'>
       Hello Geeks!
     </div>
+
+    <Carousel />
     </>
   )
 }

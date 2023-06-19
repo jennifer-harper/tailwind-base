@@ -2,7 +2,9 @@ import { createRoot } from 'react-dom/client'
 import { Auth0Provider } from '@auth0/auth0-react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
+import { ThemeProvider } from "@material-tailwind/react";
 import App from './components/App'
+import './components/app.css'
 
 document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('app') as HTMLElement).render(
@@ -14,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
       audience="https://fruits/api"
       // audience="https://test-site/api"
     >
-      <Router>
-        <App />
+      <Router>      
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </Router>
     </Auth0Provider>
   )
