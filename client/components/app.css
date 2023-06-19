@@ -5,3 +5,7 @@
 /* body {
   padding: 20px;
 } */
+
+.custom-styles {
+  @apply font-sans bg-red-600 w-full;
+}
