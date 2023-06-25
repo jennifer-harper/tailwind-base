@@ -1,12 +1,12 @@
 import Nav from './Nav'
-import Carousel from './Carousel'
+// import Carousel from './Carousel'
 
 function App() {
 
   return (
     <>
-    <Nav />
-    <Carousel />
+    {/* <Nav /> */}
+    {/* <Carousel /> */}
     </>
   )
 }

@@ -2,10 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* body {
-  padding: 20px;
-} */
 
 .custom-styles {
   @apply font-sans bg-red-600 w-full;
+}
+
+@layer components {
+  .btn-main {
+    @apply bg-sky-600 hover:bg-sky-700 px-5 py-3 text-white rounded-lg;
+  }
 }

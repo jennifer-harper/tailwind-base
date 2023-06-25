@@ -13,12 +13,15 @@ module.exports = withMT ({
         sans: ['Barlow', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
-      screens: {
-        sm: '480px',
-        md: '768px',
-        lg: '976px',
-        xl: '1440px',
+      extend:{
+        screens: {
+          '-xl' : {max: '1440px'},
+          '-lg' : {max: '1025px'},
+          '-md' : {max: '768px'},
+          '-sm' : {max: '480px'},          
+        },
       },
+
   },
   plugins: [],
 })
