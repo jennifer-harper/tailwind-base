@@ -1,5 +1,7 @@
-import Nav from './Nav'
+//import Nav from './Nav'
 // import Carousel from './Carousel'
+import Profile from "./Profile"
+
 
 function App() {
 
@@ -7,6 +9,7 @@ function App() {
     <>
     {/* <Nav /> */}
     {/* <Carousel /> */}
+    <Profile />
     </>
   )
 }
