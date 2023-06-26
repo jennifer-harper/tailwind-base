@@ -1,15 +1,9 @@
-//import Nav from './Nav'
-// import Carousel from './Carousel'
-import Profile from "./Profile"
-
-
+import { Utilities } from "./Utilities"
 function App() {
 
   return (
     <>
-    {/* <Nav /> */}
-    {/* <Carousel /> */}
-    <Profile />
+    <Utilities />
     </>
   )
 }
