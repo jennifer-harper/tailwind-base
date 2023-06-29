@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import { ThemeProvider } from "@material-tailwind/react";
 import App from './components/App'
-import './components/app.css'
+import '../server/public/styles/app.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('app') as HTMLElement).render(

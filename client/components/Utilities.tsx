@@ -48,7 +48,7 @@ export function Utilities() {
   
     // return <>{listItem}</>
     return (
-    <div>
+    <div className='test'>
         {people.map(person => (
             <div key={person.id}>
             <img src={getImageUrl(person)} alt={person.name} width='100' />
